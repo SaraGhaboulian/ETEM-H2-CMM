@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Graphs</title>
+    <style>
+        .graph-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .graph-container iframe {
+            flex: 1;
+            min-width: 280px;
+            height: 600px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Graphs</h1>
+    <p>Below are interactive graphs related to the ETEM-H2 final energy consumption analysis across multiple GHG policy scenarios.</p>
+
+    <h2>Final Energy Consumption by Sector and Total (CMM)</h2>
+    <p>Stacked final energy consumption (PJ) for Transportation, Industry, and economy-wide Total (CMM), across REF, GHG1, GHG2, and GHG-Max scenarios.</p>
+    <div class="graph-container">
+        <iframe src="Transportation_COMBINED_ALL_SCENARIOS.html"></iframe>
+        <iframe src="Industry_COMBINED_ALL_SCENARIOS.html"></iframe>
+        <iframe src="TOTAL_ALL_SCENARIOS.html"></iframe>
+    </div>
+
+</body>
+</html>
